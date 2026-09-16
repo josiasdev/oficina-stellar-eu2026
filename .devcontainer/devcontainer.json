@@ -1,0 +1,14 @@
+{
+  "name": "Oficina Stellar Soroban",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "postCreateCommand": "rustup update stable && rustup target add wasm32v1-none && curl -fsSL https://github.com/stellar/stellar-cli/raw/main/install.sh | sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "vadimcn.vscode-lldb"
+      ]
+    }
+  }
+}
